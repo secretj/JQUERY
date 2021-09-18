@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 플러그인 제작</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p><button class="btn1">버튼1</button></p>
+    <p><button class="btn2">버튼2</button></p>
+    <p><button class="btn3">버튼3</button></p>
+    <script>
+      
+    $(function(){
+        $fn.extend({
+
+        
+        faq:function(){
+            
+            var ts = $(this);
+            $.each(ts, function(i, o) {
+            $("button",o).on("click",tabmenu);
+            function tabmenu(){
+                if($(this).parent().next().is(":hidden")){
+                    $("li>div:visible",o).hide();
+                    $(this).parent().next().show();
+                }else{
+                    $("li>div:visible",o).hide();
+                }
+            }
+        });
+    }
+});
+    $(".faq").faq();
+});
+    </script>
+</body>
+</html>

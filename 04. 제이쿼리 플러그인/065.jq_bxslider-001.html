@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Restrict date range</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+ 
+  <style>
+    .bx-viewport{
+      width: 50%;
+    }
+    .slider{
+      Width: 50%;;
+      height: 10%;
+      text-align: center;
+      background-color: pink;
+    }
+  </style>
+   <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+ 
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto:true,
+        autoControls:true,
+        startAutoOnclick:true,
+        stopAutoOnClick:true,
+        pager:true
+        
+
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+  <div class="slider">
+    <div>I am a slide.</div>
+    <div>I am another slide.</div>
+    <div>배너 콘텐츠랍니다.</div>
+    <div>4번째</div>
+    <div>5번째</div>
+    <div>6번째</div>
+    <div>7번째</div>
+  </div>
+
+</body>
+</html>

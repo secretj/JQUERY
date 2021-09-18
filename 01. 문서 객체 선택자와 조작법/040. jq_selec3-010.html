@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr()/removeAttr() 메소드</title>
+    
+      <script src="../js/jquery-3.6.0.min.js"></script>
+    
+</head>
+
+<body>
+    <ul id="listZone">
+        <li>리스트</li>
+    </ul>
+ <script>
+        $(function() {
+           $("<li>appendTo</li>").appendTo("#listZone");
+           $("#listZone").prepend("<li>prepend</li>");
+        });
+    </script>
+</body>
+</html>
